@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "revilib",
+  "version": "${version}",
+  "name": "ReviLib",
+  "description": "Library mod",
+  "authors": [
+    "Revilo12"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/revilib/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.revilo.revilib.fabric.RevilibFabric"
+    ],
+    "client": [
+      "me.revilo.revilib.fabric.client.RevilibFabricClient"
+    ]
+  },
+  "mixins": [
+    "revilib.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.7",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.6",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
